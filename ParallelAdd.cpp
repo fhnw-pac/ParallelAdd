@@ -71,8 +71,9 @@ int main()
     int redcOMP = reduceWithOMP(a, A_SIZE);
     assert(redcSerial == redcOMP, "OMP implementation failed");
 
-    int redcOMPRed = reduceWithOMPReduce(a, A_SIZE);
-    assert(redcSerial == redcOMPRed, "OMP reduce implementation failed");
+    // TODO comment in and implement
+    // int redcOMPRed = reduceWithOMPReduce(a, A_SIZE);
+    // assert(redcSerial == redcOMPRed, "OMP reduce implementation failed");
      
     cout << "works :)!" << endl;
 }
